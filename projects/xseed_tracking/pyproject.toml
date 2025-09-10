@@ -1,0 +1,24 @@
+[tool.poetry]
+name = "xseed-tracking"
+version = "0.1.0"
+description = ""
+authors = ["gabrielesanticchisoccerment <gabriele.santicchi@soccerment.com>"]
+readme = "README.md"
+package-mode = false
+
+[tool.poetry.dependencies]
+python = "^3.10"
+plotly = "*"
+openpyxl = "*"
+numpy = ">=1.23.5, <2.0"  # Compatible with newer versions of pandas and streamlit
+pandas = ">=1.5.0, <2.0"  # Compatible with numpy >=1.23.5
+streamlit = ">=1.14.0, <2.0"  # Compatible with recent pandas and numpy versions
+
+
+[tool.poetry.group.dev.dependencies]
+ipykernel = "^6.29.5"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+

@@ -1,0 +1,65 @@
+# Ignore everything
+*
+!.gitignore
+
+# Track all Python files in all directories
+!**/*.py
+
+# Track important config and project files
+!pyproject.toml
+!poetry.lock
+!README.md
+!requirements.txt
+
+# Unignore key project directories
+!data/
+!outputs/
+!src/
+!test/
+!services/
+!gps_analysis/
+!data_refactor/
+!team_stats/
+!Data_to_be_fetched/
+
+# Ignore contents of those dirs, but allow .py files
+data/*
+outputs/*
+src/*
+test/*
+services/*
+gps_analysis/*
+data_refactor/*
+team_stats/*
+Data_to_be_fetched/*
+.venv/
+__pycache__/
+*.pyc
+
+
+# Re-allow Python files inside those directories
+!data/**/*.py
+!outputs/**/*.py
+!src/**/*.py
+!test/**/*.py
+!services/**/*.py
+!gps_analysis/**/*.py
+!data_refactor/**/*.py
+!team_stats/**/*.py
+!Data_to_be_fetched/**/*.py
+
+# Ignore specific file types
+*.csv
+*.xlsx
+*.xls
+*.json
+*.log
+*.pyc
+
+# Specific file and directory exclusions
+.DS_Store
+.vscode/
+.env
+config.yaml
+*.secret
+
